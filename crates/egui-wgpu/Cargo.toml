@@ -60,7 +60,7 @@ wgpu = { workspace = true, features = ["wgsl"] }
 
 # Optional dependencies:
 
-winit = { workspace = true, git = "https://github.com/rust-windowing/winit.git", optional = true, default-features = false, features = [
+winit = { workspace = true, optional = true, default-features = false, features = [
   "rwh_06",
 ] }
 
