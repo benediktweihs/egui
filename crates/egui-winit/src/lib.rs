@@ -1711,7 +1711,7 @@ pub fn create_winit_window_attributes(
 
     #[cfg(target_os = "macos")]
     {
-        use winit::platform::macos::WindowAttributesExtMacOS;
+        use winit::platform::macos::WindowBuilderExtMacOS as _;
         window_attributes = window_attributes
             .with_title_hidden(!_title_shown.unwrap_or(true))
             .with_titlebar_buttons_hidden(!_titlebar_buttons_shown.unwrap_or(true))
